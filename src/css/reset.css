@@ -1,4 +1,11 @@
 /* Reset styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -24,8 +31,12 @@ a {
   text-decoration: none;
 }
 
-button {
+button,
+input,
+textarea {
   cursor: pointer;
+  font: inherit;
+  outline: transparent;
 }
 
 img {
